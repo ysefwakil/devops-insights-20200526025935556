@@ -6,11 +6,12 @@ function Zip(props) {
 
     const validate = (event) => {
         const zipCodePattern = /^\d{5}$/;
-        //const valid = zipCodePattern.test(event.target.value);
-        valid = true;
+        const valid = zipCodePattern.test(event.target.value);
         if (!valid) {
-            setValidationError('* should be a city name');
-            props.clearResponse();
+//            setValidationError('* should be a city name');
+//            props.clearResponse();
+            setValidationError('');
+            props.onZipChange(event.target.value);
         } else {
             setValidationError('');
             props.onZipChange(event.target.value);
