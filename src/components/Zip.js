@@ -8,7 +8,7 @@ function Zip(props) {
         const zipCodePattern = /^\d{5}$/;
         const valid = zipCodePattern.test(event.target.value);
         if (!valid) {
-            setValidationError('* should be a 5 digit number only');
+            setValidationError('* should be a city name');
             props.clearResponse();
         } else {
             setValidationError('');
