@@ -1,4 +1,9 @@
-function MapContainer(props) {
+import React, { useState } from 'react';
+import fetch from 'isomorphic-unfetch'
+import ZipResponse from '../components/ZipResponse';
+import Zip from '../components/Zip';
+
+function MapContainer() {
 
 return(
 <html>
