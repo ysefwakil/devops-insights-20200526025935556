@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-import fetch from 'isomorphic-unfetch'
-import ZipResponse from '../components/ZipResponse';
-import Zip from '../components/Zip';
-
+function MapContainer(props) {
 
 return(
 <html>
@@ -39,5 +35,6 @@ return(
     async defer></script>
   </body>
 </html>);
+}
   
 export default MapContainer
