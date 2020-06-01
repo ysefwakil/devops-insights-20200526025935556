@@ -11,7 +11,7 @@ function App() {
       <AppHeader />
       <AppContainer />
     </div>
-    <div className="Map">
+    <div>
 	         <head>
 	    <title>Simple Map</title>
 	    <meta name="viewport" content="initial-scale=1.0">
