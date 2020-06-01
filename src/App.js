@@ -7,11 +7,12 @@ import './App.css';
 
 function App() {
   return (
+    <>
     <div className="App">
       <AppHeader />
       <AppContainer />
     </div>
-  <React.Fragment>
+
 	         <head>
 	    <title>Simple Map</title>
 	    <meta name="viewport" content="initial-scale=1.0">
@@ -44,7 +45,7 @@ function App() {
 	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgKaNdZS-JOhCKOw8PYv3jJVTYqFU6Soo&callback=initMap"
 	    async defer></script>
 	  </body>
-  </React.Fragment>
+  </>
   );
 }
 
