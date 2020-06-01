@@ -13,10 +13,11 @@ function App() {
       <AppContainer />
     </div>
 
-	         <head>
+	  <head>
 	    <title>Simple Map</title>
 	    <meta name="viewport" content="initial-scale=1.0">
 	    <meta charset="utf-8">
+	    <View>
 	    <style>
 	      /* Always set the map height explicitly to define the size of the div
 	       * element that contains the map. */
@@ -30,6 +31,7 @@ function App() {
 	        padding: 0;
 	      }
 	    </style>
+	    </View>
 	  </head>
 	  <body>
 	    <div id="map"></div>
