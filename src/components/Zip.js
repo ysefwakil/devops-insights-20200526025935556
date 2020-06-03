@@ -27,11 +27,25 @@ function Zip(props) {
                         }
                     `}
                     </style>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                    <input 
+                        type="text" 
+                        className="form-control" 
+                        id="usr" 
+                        placeholder="City Name"
+=======
+>>>>>>> 0db5f55a3591a1003b3e5e009718197f3cf221ca
                     <input
                         type="text"
                         className="form-control"
                         id="usr"
                         placeholder="Press enter after dropping pin where you want to land"
+<<<<<<< HEAD
+=======
+>>>>>>> 0db5f55... Part 2 completed without test
+>>>>>>> 0db5f55a3591a1003b3e5e009718197f3cf221ca
                         onKeyPress={(event) => {
                             if (event.key === "Enter") {
                                 validate(event);
