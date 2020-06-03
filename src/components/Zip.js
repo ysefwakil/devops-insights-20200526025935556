@@ -8,8 +8,9 @@ function Zip(props) {
         const zipCodePattern = /^[A-Za-z]+$/;
         const valid = zipCodePattern.test(event.target.value);
         if (!valid) {
-            setValidationError('* should be a city name');
-            props.clearResponse();
+            // setValidationError('* should be a city name');
+            // props.clearResponse();
+            props.onZipChange(event.target.value);
         } else {
             setValidationError('');
             props.onZipChange(event.target.value);
@@ -30,7 +31,7 @@ function Zip(props) {
                         type="text"
                         className="form-control"
                         id="usr"
-                        placeholder="City Name"
+                        placeholder="Press enter after dropping pin where you want to land"
                         onKeyPress={(event) => {
                             if (event.key === "Enter") {
                                 validate(event);

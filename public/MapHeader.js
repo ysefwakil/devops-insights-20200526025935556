@@ -7,7 +7,13 @@ function initMap(){
 
   google.maps.event.addListener(map, 'click', function(event){
     addMarker({coords:event.latLng});
-    var clickedLocation = event.latLng;
+     var myLatLng = event.latLng;
+     var lat = myLatLng.lat();
+     var lng = myLatLng.lng();
+     localStorage.setItem('lat', lat);
+     localStorage.setItem('lng', lng);
+
+
   });
 
 
