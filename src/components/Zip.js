@@ -26,17 +26,17 @@ function Zip(props) {
                         }
                     `}
                     </style>
-                    <input 
-                        type="text" 
-                        className="form-control" 
-                        id="usr" 
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="usr"
                         placeholder="City Name"
                         onKeyPress={(event) => {
                             if (event.key === "Enter") {
                                 validate(event);
                             }
                         }}
-                    ></input>   
+                    ></input>
                 </div>
             </div>
             <div className="pl-3 row">
