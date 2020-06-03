@@ -92,12 +92,6 @@
     "nightwatch": "^1.3.6",
     "nyc": "^14.1.1",
     "rewire": "^2.3.4",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    "sinon": "^1.17.7"
-=======
->>>>>>> 0db5f55a3591a1003b3e5e009718197f3cf221ca
     "sinon": "^1.17.7",
     "ws": "3.3.2"
   },
@@ -153,9 +147,5 @@
     "presets": [
       "react-app"
     ]
-<<<<<<< HEAD
-=======
->>>>>>> 0db5f55... Part 2 completed without test
->>>>>>> 0db5f55a3591a1003b3e5e009718197f3cf221ca
   }
 }
