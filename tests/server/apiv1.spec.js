@@ -37,11 +37,7 @@ describe('Get Weather', function() {
    it('with valid zip code and error from request call', function() {
        reqMock = {
            query: {
-<<<<<<< HEAD
                zip: 'Auckland'
-=======
-               zip: 'Hamilton'
->>>>>>> 0db5f55a3591a1003b3e5e009718197f3cf221ca
            }
        };
 
