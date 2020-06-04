@@ -9,16 +9,15 @@ function AppContainer(props) {
 
     const handleZipChange = async (zipValue) => {
         //console.log(`--------- fetchData called zip:${zipValue}`)
-        //const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&q=${zipValue}`)
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&q=${zipValue}`)
         var lat = localStorage.getItem('lat');
         var long = localStorage.getItem('lng');
 
-        var url = 'https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&lat=' +lat + '&lon=' +long;
-        const res = await fetch(url);
         const json = await res.json()
-        //console.log(json);
-        //Finalising the stable version of version 1
+
         setResponseData(json);
+        localStorage.setItem('weather', JSON.stringify(json));
+
     }
 
     const clearResponse = () => {
@@ -26,18 +25,23 @@ function AppContainer(props) {
     }
 
     return (
+        
         <div>
+            
+            
             <div className="row mt-4">
                 <div className="col-sm-4"></div>
                 <Zip onZipChange={handleZipChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
-            <div className="row mt-4">
+
+            <div className="row mt-4a">
                 <div className="col-sm-2"></div>
-                <ZipResponse responseData={responseData} clearResponse={clearResponse}/>
+                <ZipResponse responseData= {JSON.parse(localStorage.getItem('weather'))} clearResponse={clearResponse}/>
                 <div className="col-sm-2"></div>
             </div>
         </div>
+        
     );
 }
 
